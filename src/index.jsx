@@ -14,7 +14,7 @@ root.render(
             fov: 35,
             near: 0.1,
             far: 100,
-            position: [ 4, 0, 2 ]
+            position: [ -1.8, 2, 4 ]
         } }
     >
         <Experience />

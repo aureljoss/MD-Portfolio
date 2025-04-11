@@ -15,22 +15,11 @@ export default function Experience() {
 
   return (
     <>
-      {/* <color args={["#030202"]} attach="background" /> */}
-
       <OrbitControls makeDefault />
-      <Center>
-        <mesh geometry={nodes.baked.geometry} position={4,2,0}>
+        <mesh geometry={nodes.baked.geometry} position-y={-0.55} >
           <meshBasicMaterial map={bakedTexture} />
         </mesh>
 
-        {/* <Sparkles
-          size={8}
-          scale={[4, 2, 4]}
-          position-y={1}
-          speed={0.8}
-          count={40}
-        /> */}
-      </Center>
     </>
   );
 }
