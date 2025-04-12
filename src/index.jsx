@@ -2,8 +2,7 @@ import './style.css'
 import ReactDOM from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
 import Experience from './Experience.jsx'
-import { Html, useProgress } from '@react-three/drei'
-import { Suspense } from 'react'
+import * as THREE from 'three'
 
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
@@ -14,7 +13,7 @@ root.render(
             fov: 35,
             near: 0.1,
             far: 100,
-            position: [ -1.8, 2, 4 ]
+            position: [ 2, 0.5, 2 ]
         } }
     >
         <Experience />
